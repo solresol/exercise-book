@@ -87,9 +87,34 @@ Simple pre-processing:
  - Dealing with thousands separators and other annoyances
  - Counting the size of categories
  - Dealing with null and missing data
+ - [notebook](simple-preprocessing-examples.ipynb)
  
 Lab
  - Pick a dataset.
  - Present it, tell us something about it
 
 
+Thursday
+--------
+
+Seaborn
+ - Univariate charts: displot
+ - Bivariate plots: jointplot (including kde), pairplot
+ - Categoric plots: boxplot, violinplot, stripplot, countplot, pointplot
+ - Linear regression plots: lmplot, residplot
+ - (Students updated their notebook they created yesterday for presenting)
+
+Tableau
+ - installed, wrestled with license keys
+ - watched video
+ - short lab manipulating some sample datasets
+ 
+Acquring HTML data
+ - pandas.read_html to collect a table of populations from Wikipedia
+ - [notebook](other-data-sources.ipynb)
+ 
+Merging data
+ - pandas.merge: inner and outer joins, what to merge on
+ - how to clean up mismatches in datasets
+ - brief introduction to regular expressions, including [ ] [^ ] * and .
+ - [notebook](other-data-sources.ipynb)
