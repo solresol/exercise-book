@@ -118,3 +118,45 @@ Merging data
  - how to clean up mismatches in datasets
  - brief introduction to regular expressions, including [ ] [^ ] * and .
  - [notebook](other-data-sources.ipynb)
+
+
+Friday
+------
+
+Reviewed yesterday's final notebook. Detailed all the ways we can 
+access a dataframe:
+
+  df.ColumnName  - column as a series: can be assigned to
+  df["ColumnName"]  - column as a series: can be assigned to
+  df[0]  - first row
+
+Indexing by a list of column names:
+
+  df[["ColumnName"]] - return a 1-column dataframe view
+  df[["Col1","Col2"]] - return a 2-column dataframe view
+  
+Indexing by a list (or array) of booleans:
+
+  df[[True,False,False,True]] - return first and fourth rows
+  df[df.Price > 10] - return rows that match the condition
+  
+How to select a cell so that you can update a value (assign to it):
+
+  df.loc["RowIdx","ColIdx"] - the cell in the column called 
+        "ColIdx" in the row which has an index of "RowIdx"
+		
+  df.loc["Row1":"Row2", "Col1":"Col2"] - cols from col1 through to col2
+        of the rows that come after row1 and before row2 (including 
+		row1, row2, col1 and col2 themselves)
+
+  df.iloc[3,2] - same as loc, but using integer indexes: column 2 of row 3 
+
+
+Web scraping:
+ - wget
+ - requests library
+ - dealing with authenticated pages
+ - parsing with BeautifulSoup
+ - handling JSON files
+ 
+Project time
