@@ -34,3 +34,6 @@ Wednesday
 ---------
 
 Stakeholder Analysis
+
+Logistic Regression
+
